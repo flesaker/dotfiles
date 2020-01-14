@@ -1,0 +1,8 @@
+
+# Work repos go in $HOME/repo. Include work gitconfig when applicable.
+[includeIf "gitdir:~/repo/"]
+  path = .gitconfig-work
+
+# Private repos go in $HOME/privrepo. Include personal gitconfig when applicable.
+[includeIf "gitdir:~/privrepo/"]
+  path = .gitconfig-private
